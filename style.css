@@ -1,1 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.peg {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#guessInput {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#submitGuess {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feedbackPeg {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.feedbackPeg.exactMatch {
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.feedbackPeg.nearMatch {
+    background-color: black;
+}
+#pastGuesses{
+  text-align: center;
+    margin-top: 20px;
+  
+}
